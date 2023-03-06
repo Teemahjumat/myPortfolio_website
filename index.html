@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my portfolio page, i'm a junior frontend developer seeking for a tech role."
+    />
+    <meta
+      name="keywords"
+      content="frontend, developer, portfolio, tech, entry-level, junior developer, software developer"
+    />
+    <meta name="author" content="Fatimah Jumat" />
+    <title>My Portfolio</title>
+
+        <!-- favicon -->
+<link rel="icon" href="/images/Favicon.ico">
+
+
+    <!-- slick carousel -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+    </script>  
+
+    <base href="/"> 
+
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+  
+
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- font-awesome css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    
+
+  </head>
+  <body>
+        <!-- loader -->
+        <div class="loader" id="loader"></div>
+
+
+    <header>
+      <div class="header">
+        <!-- small-screen-navbar -->
+        <div class="side-header-sm">
+          <nav class="top-nav">
+            <h3>Fatimah Jumat</h3>
+
+            <div class="icons">
+              <a
+                class="icon-link FB"
+                href="http://www.facebook.com/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook-f" title="Facebook"></i>
+              </a>
+              <a
+                class="icon-link Twit"
+                href="http://www.twitter.com/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-twitter" title="Twitter"></i>
+              </a>
+              <a
+                class="icon-link IG"
+                href="http://www.instagram.com/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram" title="Instagram"></i>
+              </a>
+              <a
+                class="icon-link LIN"
+                href="http://www.linkedin.com/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
+              </a>
+              <!-- hamburger -->
+              <div class="hamburger">
+                <img
+                  src="/images/icons8-menu-rounded-50.png"
+                  alt="hideMenu"
+                  class="bars solid"
+                />
+                <img
+                  src="/images/icons8-close-24.png"
+                  alt="showMenu"
+                  class="close solid"
+                />
+              </div>
+            </div>
+          </nav>
+          <div class="drop-down-list" id="menu">
+            <ul>
+              <li class="active"><a class="header-link" href="#home">Home</a></li>
+              <li><a class="header-link" href="#about">About Me</a></li>
+              <li><a class="header-link" href="#services">What I Do</a></li>
+              <li><a class="header-link" href="#resume">Resumé</a></li>
+              <li><a class="header-link" href="#portfolio">Portfolio</a></li>
+              <li>
+                <a class="header-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="contact">
+                <a class="header-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- large-screen-navbar -->
+        <div class="side-header-lg">
+          <div class="img-div">
+            <a class="index-link" href="#home">
+              <img
+                src="/images/techMama-removebg-preview.png"
+                alt="dev-image"
+                class="dev-img"
+              />
+              <p>Fatimah Jumat</p>
+            </a>
+          </div>
+
+          <nav class="side-nav">
+            <ul>
+              <li class="active"><a class="header-link" href="#home">Home</a></li>
+              <li><a class="header-link" href="#about">About Me</a></li>
+              <li><a class="header-link" href="#services">What I Do</a></li>
+              <li><a class="header-link" href="#resume">Resumé</a></li>
+              <li><a class="header-link" href="#portfolio">Portfolio</a></li>
+              <li>
+                <a class="header-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li> <a class="header-link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <a
+              class="icon-link FB"
+              href="http://www.facebook.com/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f" title="Facebook"></i>
+            </a>
+            <a
+              class="icon-link Twit"
+              href="http://www.twitter.com/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter" title="Twitter"></i>
+            </a>
+            <a
+              class="icon-link IG"
+              href="http://www.instagram.com/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram" title="Instagram"></i>
+            </a>
+            <a
+              class="icon-link LIN"
+              href="http://www.linkedin.com/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
+            </a>
+          </div>
+        </div>
+        <section class="header-main" id="home">
+          <div class="overlay">
+            <div class="overlay-content">
+              <p class="welcome">Welcome</p>
+              <h3 id="sentences"></h3>
+              <p class="location">based in Kwara State, Nigeria.</p>
+              <button class="btn1">
+                <a href="#contact">Hire Me</a>
+              </button>
+
+              <div
+                class="animate__animated animate__fadeInDown animate__infinite"
+              >
+                <a href="#about" class="scroll-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        class="color-switcher"
+        id="color-switcher"
+        onclick="openGear()"
+        title="click to open"
+      >
+        <button class="fixed" id="btn-fixed">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+      <div class="color-display" id="color-display">
+        <h3>
+          Color Switcher
+          <span class="closeSwitch" onclick="closeGear()"
+            ><i class="fa-solid fa-close"></i
+          ></span>
+        </h3>
+        <hr />
+        <button title="Blue" id="blue" class="colorBtn" onmousedown="small(this)" ></button>
+        <button title="Gold" id="gold" class="colorBtn" onmousedown="small(this)" ></button>
+        <button title="Red" id="red" class="colorBtn" onmousedown="small(this)" ></button>
+        <button title="Purple" id="purple" class="colorBtn" onmousedown="small(this)" ></button>
+        <button title="Orange" id="orange" class="colorBtn" onmousedown="small(this)" ></button>
+        <button title="Pink" id="pink" class="colorBtn" onmousedown="small(this)" ></button>
+        <button title="Brown" id="brown" class="colorBtn" onmousedown="small(this)" ></button>
+        <button title="Light-blue" id="lightBlue" class="colorBtn" onmousedown="small(this)" ></button>
+        <button class="reset select" id="reset">Reset Default Teal</button>
+      </div>
+    </header>
+    <main>
+      <!-- About me section -->
+      <section id="about" class="about">
+        <div class="container align">
+          <h1 class="header-section">ABOUT ME</h1>
+          <p class="overHead black select">Know Me More</p>
+          <div class="hr"></div>
+        </div>
+        <div class="container about-body">
+          <div class="main-about center-text-md">
+            <h2 class="black mb select">
+              I'm <span class="teal select">Fatimah Jumat,</span> a Web
+              Developer
+            </h2>
+            <p class="mb lh">
+              As a tech-mom and a front-end developer, I have a unique
+              combination of skills that allow me to excel in both my personal
+              and professional life. My love for technology started at a young
+              age, and I have since honed my skills in HTML, CSS, JavaScript,
+              and other front-end technologies. I am passionate about creating
+              clean, intuitive, and user-friendly interfaces that enhance the
+              user experience.
+            </p>
+            <p class="lh">
+              As a mother, I understand the importance of balance and
+              flexibility in life. I bring these values to my work, and I am
+              always looking for new and innovative ways to improve processes
+              and make work more efficient. My ability to manage multiple tasks
+              and priorities, combined with my technical expertise, make me a
+              valuable asset to any team. Whether I am working on a project for
+              a client or spending time with my family, I approach everything
+              with determination, passion, and a love for learning.
+            </p>
+          </div>
+          <div class="main-about">
+            <p class="borderBottom"><strong>Name: </strong> Fatimah Jumat</p>
+            <p class="borderBottom">
+              <strong class="select">Email: </strong>
+              <a href="mailto:ummzeenah@gmail.com" class="mail-link select"
+                >ummzeenah@gmail.com
+              </a>
+            </p>
+            <p class="mb lh"><strong>From: </strong> Kwara, Nigeria</p>
+            <button class="btn2">
+              <a
+                class="btn-link"
+                href="https://drive.google.com/file/d/1rEzErM38VXM1XVdnsZeN61xGNdxLASxz/view?usp=drivesdk"
+                target="_blank">
+                Download CV
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="aboutExperience container">
+          <div class="Exp_content firstContent">
+            <h2 class="Exp-header">&lt1</h2>
+            <p>Year Experience</p>
+          </div>
+
+          <div class="Exp_content dottedLine">
+            <span class="vl"></span>
+          </div>
+
+          <div class="Exp_content">
+            <h2 class="Exp-header">1+</h2>
+            <p>Happy Clients</p>
+          </div>
+
+          <div class="Exp_content dottedLine">
+            <span class="vl"></span>
+          </div>
+
+          <div class="Exp_content">
+            <h2 class="Exp-header">1+</h2>
+            <p>Projects Done</p>
+          </div>
+
+          <div class="Exp_content dottedLine">
+            <span class="vl"></span>
+          </div>
+
+          <div class="Exp_content lastContent">
+            <h2 class="Exp-header">1+</h2>
+            <p>Certifications</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- services rendered -->
+      <section id="services" class="services">
+            <div class="container align">
+                <h1 class="header-section">SERVICES</h1>
+                <p class="overHead black select">What I Do?</p>
+                <div class="hr"></div>
+            </div>
+            <div class="d-grid container">
+                <div class="d-flex">
+                    <div class="imgWrapper">
+                        <i class="fa-solid fa-desktop teal f-icons"></i>
+                    </div>
+                    <div class="imgBody">
+                        <h3 class="black  select">Web development</h3>
+                        <p class="lh"> We build a website that's functional, responsive and user-friendly.</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="imgWrapper">
+                        <i class="fa-solid fa-bug-slash teal f-icons"></i>
+                    </div>
+                    <div class="imgBody">
+                        <h3 class="black select">Debugging & Testing</h3>
+                        <p class="lh">We conduct quality assurance test on code to detect & eliminate any bugs. Testing websites
+                            for speed, performance, usability etc. making changes to optimize performance.
+                       </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="imgWrapper">
+                        <i class="fa-solid fa-user-check teal f-icons"></i>
+                    </div>
+                    <div class="imgBody">
+                        <h3 class="black select">UI/UX Utilization</h3>
+                        <p class="lh">Utilizing UI & UX principles to build interactive website. Also, 
+                            creating  and maintaining tools that improve site interaction regardless of the browser.
+                       </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="imgWrapper">
+                        <!-- <i class="fa-solid fa-laptop-mobile teal f-icons"></i> -->
+                        <i class='bx bxs-devices teal'></i>
+                    </div>
+                    <div class="imgBody">
+                        <h3 class="black select">Mobile Responsiveness</h3>
+                        <p class="lh">Ensuring that websites can be accessed on a variety of platforms and devices including
+                            desktops, laptops, tablets and smartphones.</p>
+                       </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="imgWrapper">
+                        <i class="fa-brands fa-searchengin teal"></i>
+                    </div>
+                    <div class="imgBody">
+                        <h3 class="black select">Search Engine Optimization</h3>
+                        <p class="lh">We follow SEO best practices of optimizing your web pages to increase
+                             your website’s visibility organically in the search engine result pages (SERPs). 
+                       </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="imgWrapper">
+                        <i class="fa-solid fa-screwdriver-wrench teal f-icons"></i>
+                    </div>
+                    <div class="imgBody">
+                        <h3 class="black select">Web Maintenance</h3>
+                        <p class="lh"> Providing website maintenance and making enhancements when required.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+      
+        </section>
+            <!-- resume -->
+        <section class="resume" id="resume">
+            <div class="container align">
+                <h1 class="header-section">SUMMARY</h1>
+                <p class="overHead black select">Resumé</p>
+                <div class="hr"></div>
+            </div>
+            <div class="grid-container container">
+                <div class="grid-item">
+                    <h3 class="black select fs">My Education</h3>
+                    <div class="card-body">
+                        <p class="year select">2012-2016</p>
+                        <h3 class="select">Bachelor Degree</h3>
+                        <p class="school select">University of Ilorin</p>
+                        <p class="select summaryParagraph">Studied Microbiology and finished with a class degree of Second Class Upper.</p>
+                    </div>
+
+                    <div class="card-body">
+                      <p class="year select">2020-2022</p>
+                      <h3 class="select">Online Course(HTML5 & CSS3)</h3>
+                      <p class="school select">PIRPLE</p>
+                      <p class="select summaryParagraph">HTML: Doctypes, head, body, paragraph, div, header, footer,
+                        main, lists, images, links.
+                        CSS: Selectors, rules, properties, padding, margin, borders,<span class="hide-sm">
+                        background color, font size, text alignment, inheritance,
+                       direct descendants, classes, IDs, specificity, </span>responsive web design.
+                     </p>
+                  </div>
+
+                </div>
+                <div class="grid-item">
+                    <h3 class="black select fs">My Experience</h3>
+                    <div class="card-body">
+                        <p class="year select">2022-2022</p>
+                        <h3 class="select">Front-end Dev Trainee</h3>
+                        <p class="school select">Malhub</p>
+                        <p class="select summaryParagraph">Learnt client-side development with Html, Css, Bootstrap & JavaScript. Optimization
+                            of web presentation, tested website for usability and ensure browser compatibility amongst others.
+                        </p>
+                    </div> 
+                    <div class="card-body">
+                      <p class="year select">2022-Present</p>
+                      <h3 class="select">Freelance Front-end Dev</h3>
+                      <p class="school select">Freelance</p>
+                      <p class="select summaryParagraph">Analyse user needs and design software solutions. Code high performance
+                        programs, Debugging and testing, mobile responsiveness.
+                      </p>
+                  </div>
+                </div>
+            </div>
+            <!-- skills -->
+            <div class="container">
+              <h3 class="black select fs">My Skills</h3>
+              <div class="barWrapper d-grid">
+                <div class="barContent">
+                  <div class="barHeader black">
+                    <p class="select">HTML5</p>
+                    <p class="select">80%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="myProgress">
+                    </div></div>
+                </div>
+                <div class="barContent">
+                  <div class="barHeader black">
+                    <p class="select">CSS3</p>
+                    <p class="select">65%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="myProgress css">
+                    </div></div>
+                </div>
+                <div class="barContent">
+                  <div class="barHeader black">
+                    <p class="select">BOOTSTRAP5</p>
+                    <p class="select">80%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="myProgress">
+                    </div></div>
+                </div>
+                <div class="barContent">
+                  <div class="barHeader black">
+                    <p class="select">JAVASCRIPT</p>
+                    <p class="select">55%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="myProgress js">
+                    </div></div>
+                </div>
+                <!-- <div class="barContent">
+                  <div class="barHeader black">
+                    <p class="select">REACT JS</p>
+                    <p class="select">50%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="myProgress js">
+                    </div></div>
+                </div> -->
+                <div class="barContent">
+                  <div class="barHeader black">
+                    <p class="select">GIT</p>
+                    <p class="select">30%</p>
+                  </div>
+                  <div class="bar">
+                    <div class="myProgress git">
+                    </div></div>
+                </div>
+              </div>
+            </div>
+            <!-- softskills -->
+            <div class="container mt">
+              <h3 class="black select fs">My Soft Skills</h3>
+              <div class="black">
+                <p class="list-paragraph select"><strong>-</strong> Adaptability</p>
+                <p class="list-paragraph select"><strong>-</strong> Communication</p>
+                <p class="list-paragraph select"><strong>-</strong> Creativity</p>
+                <p class="list-paragraph select"><strong>-</strong> Growth mindset</p>
+                <p class="list-paragraph select"><strong>-</strong> Interpersonal skills</p>
+                <p class="list-paragraph select"><strong>-</strong> Problem Solving</p>
+                <p class="list-paragraph select"><strong>-</strong> Teamwork</p>
+                <p class="list-paragraph select"><strong>-</strong> Time Management</p>
+              </div>
+            </div>
+              <div class="container align mt">
+                <button class="resumeButton">
+                  <a
+                href="https://drive.google.com/file/d/1rEzErM38VXM1XVdnsZeN61xGNdxLASxz/view?usp=drivesdk"
+                   target="_blank">
+                Download CV
+              </a>
+                  <i class="fa-solid fa-download"></i></button>
+              </div>
+        </section>
+
+        <!-- portfolio -->
+        <section class="portfolio" id="portfolio">
+          <div class="container align">
+            <h1 class="header-section">PORTFOLIO</h1>
+            <p class="overHead black select">My Work</p>
+            <div class="hr"></div>
+        </div>
+        <div class="portGrid container">
+          <div class="port-gridItem item-1">
+            <img src="/images/sitemach.png" alt="projectImage">
+            <div class="gridItemImg-Overlay">
+                <p class="select text">View Project</p>
+                <a href="https://github.com/Teemahjumat/css-num-counters.git" target="_blank" title="View-git-repo">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://css-num-counter.netlify.app/" target="_blank" title="View-in-Chrome">
+                  <i class="fa-brands fa-chrome"></i>
+                </a>
+            </div>
+          </div>
+          <div class="port-gridItem item-2">
+            <img src="/images/digital-clock.png" alt="projectImage">
+            <div class="gridItemImg-Overlay">
+                <p class="select text">View Project</p>
+                <a href="https://github.com/Teemahjumat/digitalClock.git" target="_blank" title="View-git-repo">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://digitalclockbyfatimah.netlify.app//" target="_blank" title="View-in-Chrome">
+                  <i class="fa-brands fa-chrome"></i>
+                </a>
+            </div>
+          </div>
+          <div class="port-gridItem item-3">
+            <img src="/images/NFT.png" alt="projectImage">
+            <div class="gridItemImg-Overlay">
+              <p class="select text">View Project</p>
+              <a href="https://github.com/Teemahjumat/Nft-magnificient.git" target="_blank" title="View-git-repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://fateemah-nft.netlify.app//" target="_blank" title="View-in-Chrome">
+                <i class="fa-brands fa-chrome"></i>
+              </a>
+            </div>
+          </div>
+          <div class="port-gridItem item-4">
+            <img src="/images/calc.png" alt="projectImage">
+            <div class="gridItemImg-Overlay">
+              <p class="select text">View Project</p>
+              <a href="https://github.com/Teemahjumat/calculator.git" target="_blank" title="View-git-repo">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://calculatorbyfatimah.netlify.app/" target="_blank" title="View-in-Chrome">
+                <i class="fa-brands fa-chrome"></i>
+              </a>
+            </div>
+          </div>
+          <div class="port-gridItem item-5">
+            <img src="/images/na-tours.png" alt="projectImage">
+            <div class="gridItemImg-Overlay">
+                <p class="select text">View Project</p>
+                <a href="https://github.com/Teemahjumat/NATURE.git/" target="_blank" title="View-git-repo">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://greenlife-fatimah.netlify.app/" target="_blank" title="View-in-Chrome">
+                  <i class="fa-brands fa-chrome"></i>
+                </a>
+            </div>
+          </div>
+          <div class="port-gridItem item-6">
+            <img src="/images/diamond.png" alt="projectImage">
+            <div class="gridItemImg-Overlay">
+                <p class="select text">View Project</p>
+                <a href="https://github.com/Teemahjumat/blockchain-algo-diamond.git" target="_blank" title="View-git-repo">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://fateemah-diamond.netlify.app/" target="_blank" title="View-in-Chrome">
+                  <i class="fa-brands fa-chrome"></i>
+                </a>
+            </div>
+          </div>
+          <div class="port-gridItem item-7">
+            <img src="/images/finance.png" alt="projectImage">
+            <div class="gridItemImg-Overlay">
+                <p class="select text">View Project</p>
+                <a href="https://github.com/Teemahjumat/finance.git" target="_blank" title="View-git-repo">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://finance-creator.netlify.app/" target="_blank" title="View-in-Chrome">
+                  <i class="fa-brands fa-chrome"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <!-- testimonial -->
+        <section class="testimonial" id="testimonial">
+          <div class="container align">
+            <h1 class="header-section">Testimonial</h1>
+            <p class="overHead black select">Client Speak</p>
+            <div class="hr"></div>
+          </div>
+
+          <div class="testCarousel container">
+            <div class="carouselItem">
+              <div class="testCard d-flex">
+                <div class="testImg">
+                  <img src="/images/whitecoode-removebg-preview.png" alt="client-Img">
+                </div>
+                <div class="testImgName sm">
+                  <p class="black"> Ridwanullah Yahya</p>
+                  <p> Mobile developer at Phinol technology</p>
+                </div>
+              </div>
+              <p class="black c-graph">"She is proficient in delivering good and standard work."</p>
+            </div>
+
+            <div class="carouselItem">
+              <div class="testCard d-flex">
+                <div class="testImg">
+                  <img src="/images/rilwanAkeye.jpeg" alt="client-Img">
+                </div>
+                <div class="testImgName sm">
+                  <p class="black"> Rilwan Akeyewale</p>
+                  <p> CEO at TechPlan Africa</p>
+                </div>
+              </div>
+              <p class="black c-graph" id="reduce">"Fatimah is very diligent and a delight to work with.
+                 She’s not only very professional, she lights up the space with her positive energy."</p>
+            </div>
+
+           <div class="carouselItem">
+              <div class="testCard d-flex">
+                <div class="testImg">
+                  <img src="/images/emerald-removebg-preview.png" alt="client-Img">
+                </div>
+                <div class="testImgName sm">
+                  <p class="black"> Emerald Akhaumere</p>
+                  <p> IT programs coordinator at The Smile Outreach Nigeria</p>
+                </div>
+              </div>
+              <p class="black c-graph" id="reduce">" I admire her for her daring courage to be a Mum in tech, she
+                has good working ethics. Proper scheduling and prioritization skills is very effective in any discipline"</p>
+            </div>
+
+            <div class="carouselItem">
+              <div class="testCard d-flex">
+                <div class="testImg">
+                  <img src="/images/devsuite-removebg-preview.png" alt="client-Img">
+                </div>
+                <div class="testImgName sm">
+                  <p class="black"> Kamaldeen Sulyman</p>
+                  <p> Senior frontend developer at OpenSafari</p>
+                </div>
+              </div>
+              <p class="black c-graph">"she is an amazing Software developer,
+                 she has a deep understanding of her craft and delivers good results."
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+          <div class="container align">
+            <h1 class="header-section">Contact</h1>
+            <p class="overHead black select">Get in Touch</p>
+            <div class="hr"></div>
+        </div>
+
+        <div class="container d-flex contact-body"  style="gap:1.25rem;">
+            <div class="contact-content address">
+                <p class="fs black mb"><strong class="select">CONTACT ME</strong> </p>
+                <p class="lh select mb">
+                  I enjoy discussing new projects and coding challenges.
+                   Please share as much info, as possible so we can get the most out of our first catch-up.
+                </p>
+                <p class="lh select chat">
+                  <i class="fa-solid fa-phone teal"></i> (+234) 8163473755
+                </p>
+                <p class="lh chat">
+                  <i class="fa-brands fa-whatsapp teal"></i>
+                   <a href="http://wa.link/vttuqq" target="_blank" class="select" title="click to chat me">
+                     Chat Me</a> 
+                </p>
+                <p class="lh select chat mb">
+                  <i class="fa-solid fa-envelope teal"></i> ummzeenah@gmail.com
+                </p>
+                <p class="fs black mb"><strong class="select">FOLLOW ME</strong> </p>
+
+                <div class="d-flex logo" style="gap:3.125rem ;">
+                  
+                  <a
+                    class="icon-link"
+                    href="https://twitter.com/UmmZeenah"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-twitter fs teal" title="Twitter"></i>
+                  </a>
+                  
+                  <a
+                    class="icon-link"
+                    href="https://www.linkedin.com/in/fatimahjumat/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-linkedin-in fs teal" title="LinkedIn"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="contact-content">
+              <p class="fs black mb send"><strong class="select">SEND ME A NOTE</strong> </p>
+              <form action="https://formsubmit.co/1e45420888710a6b9a8059aeeed68784" method="post" id="contactForm">
+                  <!-- disable spam -->
+                  <input type="hidden" name="_captcha" value="false">
+
+                  <!-- * We highly recommend you use the reCAPTCHA (not to disable it) in order to avoid 
+                  some technical limitations which we impose from time to time in order to filter out bots,
+                   spam, and other malicious programs. -->
+
+                   <!-- response -->
+                   <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+
+                   <!-- email template sent -->
+                   <input type="hidden" name="_template" value="table">
+                    <!-- spammers -->
+                    <input type="text" name="_honey" style="display:none">
+
+
+                <input type="text" placeholder="Name" id="user-name" name="name" required>
+                <input type="email" placeholder="Email" id="user-email" name="email" required> <br>
+                <textarea type="text" rows="10" placeholder="Tell me more about your needs....." name="message" required></textarea><br>
+                
+                <div class="button-div">
+                  <button type="submit" class="btn2" id="myBtn">
+                    Send Message
+                  </button>
+                </div>
+                  <!-- modal -->
+                  <div id="myModal" class="modal container">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <!-- <i class="fa-regular fa-xmark teal close"></i> -->
+                      <span class="end teal">✖️</span>
+                      <p class="select">Thanks for contacting me ❤️❤️..</p>
+                    </div>
+                  </div>
+              
+              </form>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p class="black select container" style="text-align: center;" >
+        Copyright © <span id="foo-graph" class="select"></span>  Fatimah Jumat. All Rights Reserved.
+      </p>
+      <span onclick="scrollToTop()" id="scroll-to-top" title="back to top"><i class="fa-solid fa-chevron-up"></i></span>
+
+    </footer>
+
+
+
+    <script src="app.js"></script>
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<script src="jquery.js"></script>
+
+<script>
+  document.getElementById("foo-graph").innerHTML = new Date().getFullYear();  
+</script>
+
+  </body>
+</html>
