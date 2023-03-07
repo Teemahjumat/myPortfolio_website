@@ -145,8 +145,9 @@ display: none;
     padding: 1.875rem; 
     color: var(--white);  
     cursor: pointer;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -200,12 +201,14 @@ opacity: 50%;
 /* main-bar */
 .header-main{
     background-image: url(/images/intro-bg.jpg);
-    background-attachment: fixed;
+    /* background-attachment fixed not supported by ios */
+    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
+
 }
 
 .overlay{
@@ -622,6 +625,8 @@ color: var(--darkGrey);
     transition: all 0.5s ease-in-out;
   }
   
+  
+
   .item-2{
       grid-column-start: 2;
       grid-row: 1 / 3;
@@ -1042,6 +1047,7 @@ height: 18.75rem;
 }
 
 @media screen and (max-width: 768px) {
+    
     #sentences{
         font-size: 2.3rem;
         line-height: 4rem;

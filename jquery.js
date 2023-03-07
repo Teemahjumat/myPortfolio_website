@@ -1,5 +1,6 @@
 
-    $('.testCarousel').slick({
+  // $(function(){
+  $('.testCarousel').slick({
         dots: true,
         infinite: false,
         speed: 300,
@@ -30,16 +31,12 @@
               // variableWidth:true
             }
           }
-          // {
-          //   breakpoint: 320,
-          //   settings: {
-          //     slidesToShow: 1,
-          //     slidesToScroll: 1,
-          //     variableWidth:true
-          //   }
-          // }
+
         ]
       });
+
+    // });
+
     
     
   
