@@ -232,14 +232,14 @@
           ></span>
         </h3>
         <hr />
-        <button title="Blue" id="blue" class="colorBtn" onmousedown="small(this)" ></button>
-        <button title="Gold" id="gold" class="colorBtn" onmousedown="small(this)" ></button>
-        <button title="Red" id="red" class="colorBtn" onmousedown="small(this)" ></button>
-        <button title="Purple" id="purple" class="colorBtn" onmousedown="small(this)" ></button>
-        <button title="Orange" id="orange" class="colorBtn" onmousedown="small(this)" ></button>
-        <button title="Pink" id="pink" class="colorBtn" onmousedown="small(this)" ></button>
-        <button title="Brown" id="brown" class="colorBtn" onmousedown="small(this)" ></button>
-        <button title="Light-blue" id="lightBlue" class="colorBtn" onmousedown="small(this)" ></button>
+        <button title="Blue" id="blue" class="colorBtn" onclick="small(this)" ></button>
+        <button title="Gold" id="gold" class="colorBtn" onclick="small(this)" ></button>
+        <button title="Red" id="red" class="colorBtn" onclick="small(this)" ></button>
+        <button title="Purple" id="purple" class="colorBtn" onclick="small(this)" ></button>
+        <button title="Orange" id="orange" class="colorBtn" onclick="small(this)" ></button>
+        <button title="Pink" id="pink" class="colorBtn" onclick="small(this)" ></button>
+        <button title="Brown" id="brown" class="colorBtn" onclick="small(this)" ></button>
+        <button title="Light-blue" id="lightBlue" class="colorBtn" onclick="small(this)" ></button>
         <button class="reset select" id="reset">Reset Default Teal</button>
       </div>
     </header>
@@ -509,7 +509,7 @@
                 <div class="barContent">
                   <div class="barHeader black">
                     <p class="select">GIT</p>
-                    <p class="select">30%</p>
+                    <p class="select">40%</p>
                   </div>
                   <div class="bar">
                     <div class="myProgress git">
@@ -774,7 +774,7 @@
 
                 <input type="text" placeholder="Name" id="user-name" name="name" required>
                 <input type="email" placeholder="Email" id="user-email" name="email" required> <br>
-                <textarea type="text" rows="10" placeholder="Tell me more about your needs....." name="message" required></textarea><br>
+                <textarea type="text" placeholder="Tell me more about your needs....." name="message" required></textarea><br>
                 
                 <div class="button-div mb">
                   <button type="submit" class="btn2" id="myBtn">
@@ -821,5 +821,13 @@
   document.getElementById("foo-graph").innerHTML = new Date().getFullYear();  
 </script>
 
+<script>
+    // document.addEventListener('touchstart', handler, {capture: true});
+  //   addEventListener(document, "touchstart", function(e) {
+  //   console.log(e.defaultPrevented);  // will be false
+  //   e.preventDefault();   // does nothing since the listener is passive
+  //   console.log(e.defaultPrevented);  // still false
+  // }, Modernizr.passiveeventlisteners ? {passive: true} : false);
+</script>
   </body>
 </html>
