@@ -1,4 +1,4 @@
-// loader
+// loader from 100L
 
 
  function myFunction() {
@@ -124,7 +124,7 @@ window.addEventListener("scroll", function() {
 
 
 
-var sentences = ["I'm Fatimah Jumat.", "I'm a Frontend Developer.", "I'm a Tech mom."];
+var sentences = ["I'm Fatimah Jumat.", "I'm a Frontend Developer.", "I'm a Techie."];
 var index = 0;
 var el = document.getElementById("sentences");
 

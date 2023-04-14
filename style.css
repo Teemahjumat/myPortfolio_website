@@ -576,6 +576,9 @@ color: var(--darkGrey);
 .js{
     width: 55%;
 }
+.react{
+    width:50%;
+}
 .git{
     width: 40%;
 }
